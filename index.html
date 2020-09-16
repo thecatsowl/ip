@@ -1,0 +1,49 @@
+<!-- This site explores Internet Programming -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<html>
+   <head>
+	 
+	    <title>Exploring Internet Programming</title>
+		<meta charset="utf-8">
+		<style>
+		   body
+		   {
+			   background-color: #0000ff;
+		       color: #ff0000;
+		   }
+		   .h1_top
+		   {
+			   text-align: center;
+		   }
+		   .nav
+		   {
+			   text-align: center;
+		   }
+		   .dark-mode
+           {
+			   background-color: #111111;
+			   color: #ff0000;
+		   }
+		</style>
+		<link rel="icon" type="image/x-icon" href="favicon_5.ico">
+	 </head>
+
+   <body>
+      <h1>Hello, Internet Programming World!</h1> 
+      <nav>
+	     <button onclick="toggleFunction()">Toggle Dark Mode</button> 
+
+		 <script>
+		    function toggleFunction()
+   			{
+				var element=document.body;
+				element.classList.toggle("dark-mode");
+			}	
+		 </script>
+	  </nav>  
+   </body>
+
+</html>
