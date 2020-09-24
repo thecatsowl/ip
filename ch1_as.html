@@ -2,78 +2,85 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Chapter 1 Assignment</title>
-	<meta charset="utf-8">
-	<style>
-		body
-		{
-			background-color: #0000ff;
-			color: #ff0000;
-		}
-	    .h1_top
-		{
-			text-align: center;
-		}
-		.nav_top
-		{
-			text-align: center;
-		}
-		.back-drop
-		{
-			background: #333333;
-			color: #0000ff;
-		}
-		.answer
-		{
-			color: #ff0000;
-		}
-		a:link
-		{
-			color: #0000ff;
-		}
-		a:hover
-		{
-			color: #40e0d0;
-		}
-	</style>
-	<link rel="icon" type="image/x-icon" href="favicon_4.ico">
+	<head>
+		<title>Chapter 1 Assignment</title>
+		<meta charset="utf-8">
+		<style>
+			body
+			{
+				background-color: #0000ff;
+				color: #ff0000;
+			}
+			.h1_top
+			{
+				text-align: center;
+			}
+			.nav_top
+			{
+				text-align: center;
+			}
+			.dark-mode
+			{
+				background: #333333;
+				color: #0000ff;
+			}
+			.answer
+			{
+				color: #ff0000;
+			}
+			a:link
+			{
+				color: #0000ff;
+			}
+			a:hover
+			{
+				color: #40e0d0;
+			}
+			footer
+			{
+				text-align: center;
+			}
+		</style>
+		<link rel="icon" type="image/x-icon" href="favicon_4.ico">
 
-	<script language="JavaScript">
-		<!--
-			var element;	// element toggles page to dark mode
-			
+		<script language="JavaScript">
+			<!--
+				var element;	// element toggles page to dark mode
+				
+				function toggleFunction()
+				{
+					//	function toggles page to dark mode
+				}
+			//-->
+		</script>
+
+	</head>
+
+	<body>
+	<h3 class="h1_top">Chapter 1 Assignment</h3>
+	<nav class="nav_top">
+		<button onclick="toggleFunction()">Toggle Dark Mode</button>
+		<script>
 			function toggleFunction()
 			{
-				//	function toggles page to dark mode
+				var element=document.body;
+				element.classList.toggle("dark-mode");
 			}
-		//-->
-	</script>
-
-</head>
-
-<body>
-<h3 class="h1_top">Chapter 1 Assignment</h3>
-<nav class="nav_top">
-	<button onclick="toggleFunction()">Toggle Dark Mode</button>
-	<script>
-		function toggleFunction()
-		{
-			var element=document.body;
-			element.classList.toggle("dark-mode");
-		}
-	</script>
-</nav>
-<br>
-<h4><b>1.6 Fill in the blanks in each of the following statements</b></h4>
-	<ol type="a">
-		<li>The process of instructing the computer to solve a problem is called <u><span class="answer"></span></u>.</li>
-		<li>What type of computer language uses English-like abbreviations for machine language instructions? <u><span class="answer"></u>.</li>
-		<li>The level of computer language at which it's most convenient for you to write programs quickly and easily is <u><span class="answer"></u>.</li>
-		<li>The only language that a computer directly understands is called that computer's <u><span class="answer"></u>.</li>
-		<li>Web 2.0 embraces an <u><span class="answer">architecture of participation</u>-a design that encourages user interaction and community contributions.</li>
-		<li><u><span class="answer"></u> is the concept that a large, diverse group of people will create smart ideas.</li>
-	</ol>
+		</script>
+	</nav>
+	<br>
+	<h4><b>1.6 Fill in the blanks in each of the following statements</b></h4>
+		<ol type="a">
+			<li>The process of instructing the computer to solve a problem is called <u><span class="answer">Programming</span></u>.</li>
+			<li>What type of computer language uses English-like abbreviations for machine language instructions? <u><span class="answer">Assembly</u>.</li>
+			<li>The level of computer language at which it's most convenient for you to write programs quickly and easily is <u><span class="answer">High-level</u>.</li>
+			<li>The only language that a computer directly understands is called that computer's <u><span class="answer">Machine Language</u>.</li>
+			<li>Web 2.0 embraces an <u><span class="answer">architecture of participation</u>-a design that encourages user interaction and community contributions.</li>
+			<li><u><span class="answer">Collective Intelligence</u> is the concept that a large, diverse group of people will create smart ideas.</li>
+		</ol>
+	<footer>
+	<h3><a href="index.html">Home</a></h3>
+	</footer>
 </body>
 
 </html>
