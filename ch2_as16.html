@@ -1,0 +1,138 @@
+<!--
+	Assignment:	Chapter 2 - Assignment 16
+	Filename:	ch2_as16.html
+	Purpose:	A local university has asked you to create an HTML5 document that
+				allows prospective college students to provide feedback about
+				their visit to the SMC campus.
+				Your HTML5 document should contain a form with textfields for a
+				name and e-mail.
+				Provide checkboxes that allow prospective students to indicate
+			   	what they liked most about the campus.
+				The checkboxes should include: campus, students, location,
+				atmosphere, dorm rooms and sports.
+				Also, provide radio buttons that ask the prospective students
+				how they became interested in the college.
+				Options should include: friends, television, Internet and other.
+				In addition, provide a text area for additional comments, a 
+				submit button and a reset button.
+				Use post to send the information in the form to http://www.deitel.com.	
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Chapter 2 - Assignment 16</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="blue.css">
+		<link rel="icon" type="image/x-icon" href="favicon_4.ico">
+	</head>
+
+	<body>
+		<h1 class="h1_top">Chapter 2 - Assignment 16</h1>
+		<nav class="nav_top">
+		<br>
+		<a href="ch1_as.html">Chapter 1 Assignment</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as6.html">Chapter 2 - Assignment 6</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as7.html">Chapter 2 - Assignment 7</a>
+		&nbsp;
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as8.html">Chapter 2 - Assignment 8</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as14.html">Chapter 2 - Assignment 14</a>
+		&nbsp;
+		&nbsp;
+		&nbsp;
+		<a href="index.html">Home</a>
+		&nbsp;
+		&nbsp;
+		<button onclick="toggleFunction()">Toggle Dark Mode</a>
+		<script type="text/javascript" src="togfun.js"></script>
+		</nav>
+		<br>
+		<h2>Feedback About Your Visit to the SMC Campus</h2> 
+		<br>
+		<p>Please fill out this form to tell us about your visit to the SMC campus.</p>
+		<br>
+		<form method="post" action="http://www.deitel.com">
+			<input type="hidden" name="recipient" value="deitel@deitel.com">
+			<input type="hidden" name="subject" value="Feedback Form">
+			<input type="hidden" name="redirect" value="main.html">
+			
+			<p>
+				<label>
+					Name: <input name="name" type="text" size="25">
+				</label>
+			</p>
+			<br>
+			<p>
+				<label>
+					E-mail Address: <input name="email" type="password" size="25">
+				</label>
+			</p>
+			<br>
+			<p>
+				<strong>What did you like most about your visit to the SMC campus?</strong>
+				<br>
+				<label>
+					Campus <input name="thingsliked" type="checkbox" value="Campus">
+				</label>
+				<label>
+					Students <input name="thingsliked" type="checkbox" value="Students">
+				</label>
+				<label>
+					Location <input name="thingsliked" type="checkbox" value="Location">
+				</label>
+				<label>
+					Atmosphere <input name="thingsliked" type="checkbox" value="Atmosphere">
+				</label>
+				<label>
+					Dorm Rooms <input name="thingsliked" type="checkbox" value="Dorms">
+				</label>
+				<label>
+					Sports <input name="thingsliked" type="checkbox" value="Sports">
+				</label>
+			</p>
+			<br>
+			<p>
+				<strong>How did you become interested in SMC?</strong>
+				<br>
+				<label>
+					Friends <input name="interestedin" type="radio" value="friends" checked>
+				</label>
+				<label>
+					Television <input name="interestedin" type="radio" value="television" checked>
+				</label>
+				<label>
+					Internet <input name="interestedin" type="radio" value="internet" checked>
+				</label>
+				<label>
+					Other <input name="interestedin" type="radio" value="other" checked>
+				</label>
+			</p>
+			<br>
+			<p>
+				<strong>Additional Comments:</strong>
+				<br>
+				<label>
+					<textarea name="comments" rows="4" cols="36"></textarea> 
+				</label>
+			</p>
+			<br>
+			<p>
+				<input type="submit" value="Submit"></input>
+				<input type="reset" value="Clear"></input>
+			</p>
+		</form>
+
+	</body>
+
+
+</html>
+
+
