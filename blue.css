@@ -1,0 +1,41 @@
+body
+{
+	background-color: #0000ff;
+	color: #ffff00;
+}
+table
+{
+	background-color: #ffffff;
+	color: #000000;
+	font: normal 1em serif;
+}
+table.center
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+.h1_top
+{
+	text-align: center;
+}
+.nav_top
+{
+	text-align: center;
+}
+a:link
+{
+	color: #40e0d0;
+}
+a:visited
+{
+	color: #ff00ff;
+}
+a:hover
+{
+	color: #00ffff;
+}
+.dark-mode
+{
+	background-color: #333333;
+	color: #40e0d0;
+}
