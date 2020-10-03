@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!--
+	Assignment:	Chapter 3 - Assignment 6
+
+	Filename:	ch3_as6.html
+	
+	Purpose:	This Program generates  a web registration
+				form to obtain a user's first name, last 
+				name, and e-mail address; in addition, 
+				an option survey question asks the  user's
+				year in college; e.g., Freshman. The 
+				optional survey question is placed in a 
+				details element that the user can expand
+				to see the question.
+				
+-->
+
+<html lang="en">
+	<head>
+		<title>Chapter 3 - Assignment 6</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="blue.css">
+		<link rel="icon" type="image/x-icon" href="favicon_4.ico">
+	</head>
+
+<body>
+	<h1 class="h1_top">Chapter 3 - Assignment 6</h1>
+	<nav class="nav_top">
+		<a href="ch1_as.html">Chapter 1 Assignment</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as6.html">Chapter 2 - Assignment 6</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as8.html">Chapter 2 - Assignment 8</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as14.html">Chapter 2 - Assignment 14</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as16.html">Chapter 2 - Assignment 16</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch3_as5.html">Chapter 3 - Assignment 5</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch3_as8.html">Chapter 3 - Assignment 8</a>
+		&nbsp;
+		&nbsp;
+		<a href="home.html">Home</a>
+		&nbsp;
+		&nbsp;
+		<button onclick="toggleFunction()">Toggle Dark Mode</button>
+		<script type="text/javascript" src="togfun.js"></script>
+	</nav>
+	<p style="text-align: center; font-size: 7em">&#19906;</p>
+	<form method = "post" autocomplete = "on">
+		<p>
+			<label>
+			First Name: <input type="text" id="firstName" placeholder="First name"/> (First name)
+			</label>
+		</p>
+		<p>
+			<label>
+			Last Name: <input type="text" id="lastName" placeholder="Last name"/> (Last name)
+			</label>
+		</p>
+		<p>
+			<label>
+			Email: <input type="email" id="email" placeholder="name@domain.com"/> (name@domain.com)
+			</label>
+		</p>
+		<details>
+			<summary>Optional Survey Question</summary>
+			<label for="textList">
+				Year in College: <input type="text" id="txtList" placeholder="Select your year in college" list="college year"/> 
+				<datalist id="college year">
+					<option value="Freshman">
+					<option value="Sophomore">
+					<option value="Junior">
+					<option value="Senior">
+				</datalist>
+			</label>
+		</details>
+	</form>
+	<br>
+	<p style="text-align: center; font-size: 7em">&#19909;</p>
+	<br>
+</body>
+
+</html>
