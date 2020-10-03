@@ -1,0 +1,134 @@
+<!--
+
+	Assignment:	Chapter 3 - Assignment 5
+
+	Filename:	ch3_as5.html
+
+	Purpose:	Combine 8 tasks into a single HTML5 document;
+				namely:
+				1) 3_5_a.html
+				2) 3_5_b.html
+				3) 3_5_c.html
+				4) 3_5_d.html
+				5) 3_5_e.html
+				6) 3_5_f.html
+				7) 3_5_g.html
+				8) 3_5_h.html
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Chapter 3 - Assignment 5</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="blue.css">
+		<link rel="icon" type="image/x-icon" href="favicon_4.ico">
+	</head>
+	
+	<body>
+		<h1 class="h1_top">Chapter 3 - Assignment 5</h1>
+		<nav class="nav_top">
+		<a href="ch1_as.html">Chapter 1 Assignment</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as6.html">Chapter 2 - Assignment 6</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as8.html">Chapter 2 - Assignment 8</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as14.html">Chapter 2 - Assignment 14</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch2_as16.html">Chapter 2 - Assignment 16</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch3_as5.html">Chapter 3 - Assignment 5</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch3_as6.html">Chapter 3 - Assignment 6</a>
+		&nbsp;
+		&nbsp;
+		<a href="ch3_as8.html">Chapter 3 - Assignment 8</a>
+		&nbsp;
+		&nbsp;
+		<a href="index.html">Home</a>
+		&nbsp;
+		&nbsp;
+		<button onclick="toggleFunction()">Toggle Dark Mode</button>
+		<script type="text/javascript" src="togfun.js"></script>
+		</nav>
+		
+		<section>
+			<h2>Cafeteria Rating Results Are In:</h2>
+			<p>If you were asked to rate the food at the cafeteria from 1 to 10, how would you rate it?</p>
+				1 <meter min = "0" max= "10" value = "7"></meter> 10
+			<p>On a scale from 1 to 10, the students gave the cafeteria a rating of 7.</p>
+		</section>
+
+
+		<details>
+			<summary>Survey Results</summary>
+			<ul>
+				<li>
+					Students were given a survey to rate the food at the campus cafeteria. 
+					They were instructed to rate their experience on a scale from 1 to 10.
+					The average result was 7.
+				</li>
+			</ul>
+		</details>
+
+
+		<form>
+			<p>
+				<label>
+					Name: <input type = "text" id = "firstName" autofocus /> 
+				</label>
+			</p>
+		</form>
+
+
+		<form>
+			<p>
+				<input type="text" id = "firstName" placeholder = "First Name" />
+			</p>
+		</form>
+
+
+		<form method = "post" autocomplete = "on">
+			<p>
+				<label for = "stateList">
+					<input type="text" id = "stateList" placeholder = "Select a state" list = "states" />
+					<datalist id = "states">
+						<option value = "Arizona">
+						<option value = "California">
+						<option value = "Nevada">
+						<option value = "Texas">
+						<option value = "Utah">
+					</datalist>
+				</label>
+			</p>
+		</form>
+
+
+		<form>
+			<p>
+				<label>
+					Range: 0<input type = "range" min = "0" max = "100" value = "10" />100
+				</label>
+			</p>
+		</form>
+
+
+		<form method = "post" autocomplete = "off">
+
+
+		<p>
+			Students were asked to rate the food in the cafeteria on a scale of 1 to 10. 
+			<mark>The average result was 7.</mark>
+		</p>
+
+	</body>
+
+</html>
