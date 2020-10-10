@@ -1,0 +1,25 @@
+/********************************************************************************
+	
+	Programmer:	Robert Aguilar 
+
+	Date:		10/09/20
+
+	Assignment:	Chapter 4 - Assignment 3
+
+	Filename:	ch4_as3.css
+	
+	Purpose:	This CSS style sheet implements a rule that makes all text
+				1.5 times larger than the base font of the system and colors
+				the text red.
+				
+	Class:		CS 50, Fall 2020
+
+	Instructor: Mark Edmonds
+				
+********************************************************************************/
+
+.ch4_as3
+{
+	font-size: 1.5em;
+	color: #ff0000;
+}

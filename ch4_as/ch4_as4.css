@@ -1,0 +1,30 @@
+
+/********************************************************************************
+	
+	Programmer:	Robert Aguilar 
+
+	Date:		10/09/20
+
+	Assignment:	Chapter 4 - Assignment 4
+
+	Filename:	ch4_as4.css
+	
+	Purpose:	This CSS style sheet implements a rule that places a 
+				background image halfway down the page, tiling it 
+				horizontally; the image remains in place when the user
+				scrolls up or down.
+				
+	Class:		CS 50, Fall 2020
+
+	Instructor: Mark Edmonds
+				
+********************************************************************************/
+
+body
+{
+	background-image: url(favicon_4.ico); 
+	background-size: 100px;
+	background-position: center center;
+	background-repeat: repeat-x; 
+	background-attachment: fixed;
+}

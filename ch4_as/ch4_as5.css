@@ -1,0 +1,27 @@
+
+/********************************************************************************
+	
+	Programmer:	Robert Aguilar 
+
+	Date:		10/09/20
+
+	Assignment:	Chapter 4 - Assignment 5
+
+	Filename:	ch4_as5.css
+	
+	Purpose:	This CSS style sheet implements a rule that gives all h1 and
+				h2 elements a padding of 0.5 ems, a dashed border style and
+				a margin of 0.5 ems.
+				
+	Class:		CS 50, Fall 2020
+
+	Instructor: Mark Edmonds
+				
+********************************************************************************/
+
+h1, h2
+{
+	padding: 0.5em;
+	border-style: dashed;
+	margin: 0.5em;
+}

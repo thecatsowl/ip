@@ -1,0 +1,29 @@
+
+/********************************************************************************
+	
+	Programmer:	Robert Aguilar 
+
+	Date:		10/09/20
+
+	Assignment:	Chapter 4 - Assignment 6
+
+	Filename:	ch4_as6.css
+	
+	Purpose:	This CSS style sheet implements a rule that changes the color 
+				of all elements containing attribute class = "green-Move" to
+				green and shifts them down 25 pixels and right 15 pixels.
+				
+	Class:		CS 50, Fall 2020
+
+	Instructor: Mark Edmonds
+				
+********************************************************************************/
+
+.green-Move
+{
+	color: #008000;
+	position: relative;
+	bottom: -25px;
+	right: -15px;
+	
+}
