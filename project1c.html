@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<!--
+	
+	Programmer: Robert Aguilar
+
+	Date:		10/10/20
+
+	Assignment:	Chapter  - Assignment 
+
+	Filename:	project1c.html
+	
+	Class:		CS 50, Fall 2020
+
+	Instructor: Mark Edmonds
+				
+-->
+
+<html lang="en">
+	<head>
+		<title>Homer Simpson.The Man</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="donuts, beer, pork rinds, hothogs, cheeseburgers, tacos, nachos, beer, HTML5, beer, donuts, Homer, my life">
+		<meta name="description" content="This Website will help you understand me, Homer.The Man and it will embiggen your soul by learning HTML5.">
+		<link rel="icon" type="image/x-icon" href="homer.png">
+	</head>
+
+	<body>
+
+		<!-- 
+			header element creates a header for the page, as the name implies,
+		    id is set at "0" to allow hypertext referencing	
+		-->
+		<header id="0">
+			<h1>Homer Simpson</h1>
+			<p>
+				<!-- time element inserts a date and/or time -->
+				<time>
+					2013-09-18
+				</time>
+
+			</p>
+			<figure>
+				<img src="homer.png" alt="Image of Homer Simpson eating a donut with pink glaze" width="100">
+				<figcaption><em>Homer Simpson</em></figcaption>
+			</figure>
+	    </header>
+		<table border="1">
+			<caption>Doh!</caption>
+
+			<thead>
+				<tr>
+					<td>X</th>
+					<td>O</th>
+					<td>X</th>
+				</tr>
+				<tr>
+					<td>X</th>	
+					<td>O</th>
+					<td>X</th>
+				</tr>
+				<tr>
+					<td>X</th>
+					<td>O</th>
+					<td>X</th>
+				</tr>
+			</thead>
+		</table>
+
+		<!-- Begin Section 1 -->
+		<section id="1">
+			<h3>Education</h3>
+			<ol>
+				<li>
+					School of Hard Knocks
+					<ul>
+						<li>Bachelor of Science in Everything</li>
+					</ul>
+				</li>
+				<li>
+					Santa Monica College
+					<ul>
+						<li>Associate of Science in Web Programmer</li>
+							<ul>
+								<li>Specialized in the Black Widow</li>
+							</ul>
+						<li>AA in Rock Music Appreciation</li>
+					</ul>
+				</li>
+				<li>
+					University of California at Los Angeles
+					<ul>
+						<li>Graduate Certificate in Television Watching</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+
+		<!-- Begin Section 2 -->
+		<section id="2">
+			<p>
+				<details>
+					<summary>Worldly Experience</summary>
+					<ul>
+						<li><strong>Springfield Nucular Power Plant</strong> &ndash; not sure what I'm supposed to do</li>
+						<li>Springfield Donut Barn &ndash; master taste&uuml;r: I like the ones with the pink icing.</li>
+						<li>Springfield Pork Rind Factory &ndash; senior taster</li>
+						<li>Duff Beer Brewery &ndash; taster trainee; supervisor &mdash;Jos&eacute; Antonio Gonz&aacute;lez </li>
+					</ul>
+				</details>
+			</p>
+		</section>
+
+		<!-- Begin Section 3 -->
+		<section id="3">
+			<h3>Other Skills</h3>
+			<p>
+
+				<!-- Meter Element represents a scale within a range -->
+				My rating in pie eating: 0
+				<meter min="0" max="10" value="10"></meter>
+				10
+			</p>
+			<p>
+				<del>XTML</del>HTML5 a<sub>i</sub>100<sup>100</sup>
+			</p>
+		</section>
+
+		<!-- Begin Section 4 -->
+		<section id="4">
+			<h3>The following data will be posted to my server at homerswebsight.com</h3>
+
+			<!-- New HTML5 form input types and attributes -->
+			<form method="post" action="homerswebsight.com">
+				<p>
+					<label>
+						Color:
+						<input type="color">
+					</label>
+				</p>
+				<p>
+					<label>
+						How much do you like me? not so much
+						<input type="range" min="0" max="20" value="10">
+						a bushel and a peck
+					</label>
+				</p>
+
+				<!-- <textarea> creates a multiline textbox -->
+				<p>
+					<label>
+						<textarea name="homerisms" rows="4" cols="62">"I think, therefore I drink." - Homerism #73
+
+Or, supply your own wisdom here, if you think you're so smart.
+						</textarea>
+					</label>
+				</p>
+				<p>
+					<label>
+						Please rate my web page:
+						<input type="number" min="0" max="10" step="1" value="10">
+					</label>
+				</p>
+				<p>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Clear">
+				</p>
+				</form>
+		</section>
+
+		<!-- 
+			Footer Element represents a footer to a section or page,
+			usually containing information such as author's name,
+			copyright, etc.
+	    -->
+		<footer id="5">
+				<p>
+					&lt;References available upon request&gt;
+				</p>
+				<p>
+
+					<!-- wbr Element indicates where to break a word when the text wraps -->
+					<h6>&copy;2012 Homer Simpson King<wbr>dom &amp; Universe, Inc.</h6>
+				</p>
+				<p>
+					<a href=#0>Top</a>
+				</p>
+		</footer>
+
+	</body>
+
+</html>
