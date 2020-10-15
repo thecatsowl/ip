@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<!--
+	
+	Programmer: Robert Aguilar
+
+	Date:		10/15/20
+
+	Assignment:	Chapter 6 - Assignment 16 
+
+	Filename:	ch6_16as.html
+
+	Purpose:	This document contains a script in the head file. The body element remains empty.
+				When the document loads into a browser, the JavaScript file in the head element
+				runs; this script prompts the user for two integer numbers, and the output 
+				displays the sum, product, difference and quotient of the two numbers.
+				The "window" Object's "prompt" method is used.
+				
+	Notes:		The Object resides in memory its information is used by the script; attributes are
+				the its data and its behavior is its methods. The Object's methods use the attributes
+				to perform useful actions for the client of the Object, which is the script that calls
+				the methods.
+
+				The "\n" escape sequence only works within the dialogue box in this script.
+				In order to render a new line, the "<br>" tag must be used within the quoation marks
+				of a concatenated string.
+
+				The "window" Object's "prompt" method displays in the script-generated dialogue box, so
+				the "\n" escape sequence is used for a new line.
+
+				The "document" Object's "writeln" method renders within the document, so "<br>" tags
+			    are used for a new line.	
+
+	Class:		CS80, Fall 2020
+
+	Instructor: Mark Edmonds
+				
+-->
+
+<html>
+
+   <head> 
+      <title>Chapter 6 - Assignment 16</title>
+      <meta charset="utf-8">
+	  <link rel="icon" href="favicon_4.ico" type="image/x-icon">
+	  <link rel="stylesheet" href="blue.css">
+	  <script type="text/javascript">
+	  
+	  	// These variables hold input numbers and parsed numbers
+	  	var firstNumber;
+		var secondNumber;
+
+		/****************************************
+
+		  The textbook uses variabes number1
+		  and number2 to hold the parsed 
+		  numbers, but the new parsed values
+		  can simply be re-assigned to the 
+		  variables originally used for the 
+		  the input values, to wit, 
+		  firstNumber and secondNumber.
+
+		****************************************/
+
+		var sum;
+		var product;
+		var difference;
+		var quotient;
+
+		// this variable is used to store the Object "document"
+		var myOwnObject;
+
+
+
+		firstNumber = window.prompt("Enter first integer number: ");
+		
+		secondNumber = window.prompt("Enter second integer number: \n and don't be snarky!");
+
+		firstNumber = parseInt(firstNumber);
+
+		secondNumber = parseInt(secondNumber);
+
+		// sum of input parsed into integers
+		sum = firstNumber + secondNumber;
+
+		// product of input parsed into integers
+		product = firstNumber * secondNumber;
+
+		// difference of input parsed into integers
+		difference = firstNumber - secondNumber;
+
+		// quotient of input parsed into integers
+		quotient = firstNumber / secondNumber;
+
+		// document is an object that can also be placed in memory as a variable
+		myOwnObject = document;
+
+		// display results
+		myOwnObject.writeln("<h1>The sum of your numbers is " + sum + ".\n<br>" +
+				"The product of your numbers is " + product + ".\n<br>" + "The " +
+				"difference of your numbers is " + difference + ".\n<br>" +
+				"The quotient of your numbers is " + quotient + ".\n" +
+				"<h1>");
+	  </script>
+   </head>
+
+   <!-- 
+
+   	  The textbook uses an empty body element, but in order to experiment with results, I used header and 
+	  nav elements. The script's "document" Object's "writeln" method rendered the text above the header
+	  and nav elements, which was interesting.
+
+   -->
+   <body>
+   <h1 class="h1_top">Chapter 6 - Assignment 16</h1>
+   <nav class="nav_top">
+      <a class="space" href="index.html">Home</a>
+	  <button class="space" onclick="toggleFunction()">Toggle Dark Mode</button>
+	  <script type="text/javascript" src="togfun.js"></script>	
+   </nav>
+   </body>
+</html>
